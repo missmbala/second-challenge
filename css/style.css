@@ -1,18 +1,19 @@
 
 
 body {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  width: 100%;
 }
 
 .flex-container {
   display: flex;
-  background-color: rgb(240, 225, 109);
+  background-color: rgb(255, 235, 83);
   flex-direction: row;
   justify-content: space-between;
-    padding: 20px;
+  padding: 20px;
   }
 
   .flex-container ul {
@@ -21,13 +22,28 @@ body {
     gap: 30px;
   }
 
-/* .flex-container > div {
-  background-color: rgb(196, 196, 188);
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-  text-decoration: none;
-} */
+  li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+  }
+
+  .hero-banner {
+    /*The image used */
+    background-image: url(https://images.pexels.com/photos/4467136/pexels-photo-4467136.jpeg);
+    /* Set background size */
+    background-size: cover;
+    height: 150px;
+    text-align: center;
+    font-size: xx-large;
+    padding-bottom: 10px;
+    
+  }
+
+  div h2 {
+    font-weight: lighter;
+  }
 
 .work-images {
   display: flex;
@@ -35,30 +51,7 @@ body {
   gap: 20px;
 }
 
-
-/* img {
-  padding: none;
-  border: solid 15px black;
-  margin: 0px;
-  box-shadow: 10px 10px 10px #999;
-} */
-
-.hero-banner {
-  /*The image used */
-  background-image: url(https://images.pexels.com/photos/4467136/pexels-photo-4467136.jpeg);
-  /* Set background size */
-  background-size: cover;
-  height: 150px;
-  text-align: center;
-  font-size: xx-large;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, {
   margin: 0;
 }
 
@@ -66,24 +59,28 @@ p {
   margin: 0;
 }
 
-
 .page-section {
   display: flex;
   gap: 10px;
   align-items: flex-start;
   justify-content: space-around;
   margin: 40px;
+  padding: 10px;
+  border-style: solid;
 }
 
 .page-section div {
-  flex-basis: 45rem;
+  flex-basis: 36rem;
 }
 
-@media (max-width: 900px) {
-  .hero-banner h2 {
-    font-size: 30px;
+.page-section > div li {
+  list-style: none;
+}
+
+
+@media screen and (max-width: 414px) {
+  .hero-banner {
+    font-size: 20px;
+    justify-content: center;
+    width: 400px;
   }
-
-
-  
-}
